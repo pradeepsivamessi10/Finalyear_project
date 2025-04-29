@@ -1,8 +1,8 @@
-# WiseShield Ai
+# PhishHook AI
 
 ## Description
 
-WiseShield AI is a comprehensive security solution designed to safeguard users from phishing attacks. The project integrates a Flask API server powered by Machine Learning, a Chrome extension, and a website developed using React and Tailwind CSS. The Chrome extension detects sensitive fields such as Username and Password on websites and sends the site's URL and content to the backend server. The backend server, using a pre-trained model, checks if the site is legitimate or not by comparing it with known legitimate sites. If the site is identified as fake, the extension warns the user and redirects them to the legitimate site.
+PhishHook AI is a comprehensive security solution designed to safeguard users from phishing attacks. The project integrates a Flask API server powered by Machine Learning, a Chrome extension, and a website developed using React and Tailwind CSS. The Chrome extension detects sensitive fields such as Username and Password on websites and sends the site's URL and content to the backend server. The backend server, using a pre-trained model, checks if the site is legitimate or not by comparing it with known legitimate sites. If the site is identified as fake, the extension warns the user and redirects them to the legitimate site.
 
 ## Installation
 
@@ -11,13 +11,13 @@ WiseShield AI is a comprehensive security solution designed to safeguard users f
 1. Clone the repository using the following command:
 
     ```bash
-    git clone https://github.com/Team-ByteWise/wiseshield-ai.git
+    git clone https://github.com/MohammedRila/Finalyear_project.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd wiseshield-ai
+    cd Finalyear_project
     ```
 
 3. Run the following command to run automated install:
@@ -35,7 +35,7 @@ WiseShield AI is a comprehensive security solution designed to safeguard users f
     ./run.sh
     ```
 
-The script will install the required dependencies and start the backend server, frontend website, serve some phishing websites for test and open a chrome window with the extension pre installed with phishing sites and their legitimate versions for testing.
+The script will install the required dependencies and start the backend server, frontend website, serve some phishing websites for test, and open a Chrome window with the extension pre-installed for testing phishing sites and their legitimate versions.
 
 - The frontend Web Application can be accessed at [http://localhost:5173](http://localhost:5173)
 - The backend API can be accessed at [http://localhost:5000](http://localhost:5000)
@@ -50,7 +50,7 @@ The script will install the required dependencies and start the backend server, 
 <details>
   <summary>Manual Installation</summary>
 
-#### Backend (Flask Server)
+### Backend (Flask Server)
 
 1. Navigate to the `backend` directory:
 
@@ -63,16 +63,17 @@ The script will install the required dependencies and start the backend server, 
     ```bash
     python -m venv venv
     ```
+
 3. Activate the Virtual Environment:
 
-    For Windows (Poweshell):
+    For Windows (Powershell):
 
-    ```bat
+    ```powershell
     .\venv\Scripts\activate.ps1
     ```
-    
+
     For Linux:
-    
+
     ```bash
     source venv/bin/activate
     ```
@@ -89,7 +90,7 @@ The script will install the required dependencies and start the backend server, 
     python main.py
     ```
 
-#### Frontend (Website)
+### Frontend (Website)
 
 1. Navigate to the `frontend` directory:
 
@@ -109,7 +110,7 @@ The script will install the required dependencies and start the backend server, 
     npm run dev
     ```
 
-#### Phishing Websites (FOR TESTING PURPOSES ONLY)
+### Phishing Websites (FOR TESTING PURPOSES ONLY)
 
 1. Navigate to the `evilginx` directory:
 
@@ -117,7 +118,7 @@ The script will install the required dependencies and start the backend server, 
     cd evilginx
     ```
 
-2. Download evilginx:
+2. Download Evilginx:
 
     For Windows (Powershell):
 
@@ -145,10 +146,10 @@ The script will install the required dependencies and start the backend server, 
     unzip evilginx.zip
     ```
 
-4. Start the evilginx server:
-    
+4. Start the Evilginx server:
+
     For Windows (Powershell):
-    
+
     ```powershell
     .\evilginx.exe -developer -c .
     ```
@@ -159,7 +160,7 @@ The script will install the required dependencies and start the backend server, 
     ./evilginx -developer -c .
     ```
 
-#### Chrome Extension
+### Chrome Extension
 
 1. Navigate to the `extension` directory:
 
@@ -180,20 +181,12 @@ The script will install the required dependencies and start the backend server, 
     ```
 
 4. Load the extension in Chrome:
-    
+
     - Open Chrome and navigate to `chrome://extensions/`
     - Enable Developer Mode
     - Click on `Load unpacked` and select the `build` directory inside the `extension` directory
 
-
-Now you can visit the following phishing sites to test the extension:
-
-- [Amazon Login (Fake)](https://www.amz.localhost/amz)
-- [Google Login (Fake)](https://accounts.google.localhost/google)
-- [Facebook Login (Fake)](https://www.fb.localhost/fb)
-- [LinkedIn Login (Fake)](https://www.linkedin.localhost/linkedin)
-- [Instagram Login (Fake)](https://www.ig.localhost/ig)
-- [Snapchat Login (Fake)](https://accounts.snap.localhost/snap)
+Now you can visit the phishing sites mentioned above to test the extension.
 
 </details>
 
@@ -206,13 +199,12 @@ Now you can visit the following phishing sites to test the extension:
 
 ## Disclaimer
 
-This project is for educational purposes only. The phishing sites are hosted locally and are not accessible to the public. The phishing sites are only for testing the extension and backend server. The phishing sites are not intended to be used for malicious purposes.
+This project is for **educational purposes only**. The phishing sites are hosted locally and are not accessible to the public. These sites exist only for testing the extension and backend server. They are not intended for malicious use.
 
 ## Third Party Resources Used
 
-- [Evilginx](https://github.com/kgretzky/evilginx2/) for testing phishing sites
-- [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) to bootstrap the Chrome Extension
-
+- [Evilginx](https://github.com/kgretzky/evilginx2/) for simulating phishing sites
+- [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) for bootstrapping the Chrome Extension
 
 ## Third Party Libraries Used
 
@@ -228,8 +220,8 @@ This project is for educational purposes only. The phishing sites are hosted loc
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Axios](https://axios-http.com/)
 
-
 ### Backend
+
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 - [Pandas](https://pandas.pydata.org/)
 - [Scikit-learn](https://scikit-learn.org/)
@@ -242,7 +234,6 @@ This project is for educational purposes only. The phishing sites are hosted loc
 - [Tldextract](https://tldextract.readthedocs.io/en/latest/)
 - [Selenium](https://www.selenium.dev/documentation/en/)
 - [Postman](https://www.postman.com/)
-
 
 ### Chrome Extension
 
