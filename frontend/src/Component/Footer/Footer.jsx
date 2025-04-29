@@ -9,9 +9,9 @@ function Footer() {
         <div className="w-2/3 flex justify-around">
           <div className="flex flex-col items-start gap-y-3 ">
             <p className="font-semibold text-lg">Home Solutions</p>
-            <span className="link cursor-pointer">WiseShield Standard</span>
-            <span className="link cursor-pointer">WiseShield Plus</span>
-            <span className="link cursor-pointer">WiseShield Premium</span>
+            <span className="link cursor-pointer">PhishHook Standard</span>
+            <span className="link cursor-pointer">PhishHook Plus</span>
+            <span className="link cursor-pointer">PhishHook Premium</span>
           </div>
           <div className="flex flex-col items-start gap-y-3 ">
             <p className="font-semibold text-lg">Quick Links</p>
@@ -22,7 +22,7 @@ function Footer() {
             <p className="font-semibold text-lg">Contact us</p>
             <span className="flex items-center gap-x-3">
               <img src="src/assets/mail.svg" className="h-[20px]" alt="" />
-              <span className="cursor-pointer">wiseshield@itsyourap.tech</span>
+              <span className="cursor-pointer">PhishHook@itsyourap.tech</span>
             </span>
             <span className="flex items-center gap-x-3">
               <img
@@ -30,7 +30,7 @@ function Footer() {
                 src="src/assets/phone-call.svg"
                 alt=""
               />
-              <span className="cursor-pointer">+916969xxxx9</span>
+              <span className="cursor-pointer">+914858xxxx9</span>
             </span>
           </div>
         </div>
@@ -47,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className="bg-[#8f7bff] py-2 mt-16 text-black font-semibold flex justify-center">
-        <span>©️ 2024 WiseShield AI</span>
+        <span>©️ 2025 PhishHook AI</span>
       </div>
     </footer>
   );

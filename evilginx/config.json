@@ -14,7 +14,7 @@
   },
   "lures": [
     {
-      "hostname": "",
+      "hostname": "github.localhost",
       "id": "",
       "info": "",
       "og_desc": "",
@@ -102,6 +102,21 @@
       "redirect_url": "",
       "redirector": "",
       "ua_filter": ""
+    },
+    {
+      "hostname": "github.localhost",
+      "id": "",
+      "info": "",
+      "og_desc": "",
+      "og_image": "",
+      "og_title": "",
+      "og_url": "",
+      "path": "/login",
+      "paused": 0,
+      "phishlet": "github",
+      "redirect_url": "",
+      "redirector": "",
+      "ua_filter": ""
     }
   ],
   "phishlets": {
@@ -111,9 +126,21 @@
       "enabled": true,
       "visible": true
     },
+    "example": {
+      "hostname": "",
+      "unauth_url": "",
+      "enabled": false,
+      "visible": true
+    },
     "facebook": {
       "hostname": "fb.localhost",
       "unauth_url": "https://www.fb.localhost/fb",
+      "enabled": true,
+      "visible": true
+    },
+    "github": {
+      "hostname": "github.localhost",
+      "unauth_url": "https://www.github.localhost/github",
       "enabled": true,
       "visible": true
     },

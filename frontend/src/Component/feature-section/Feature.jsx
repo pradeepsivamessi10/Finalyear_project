@@ -16,7 +16,7 @@ function Feature() {
           Don't Get Hooked by Phishing Scams
           </span>
           <p className="text-center text-xl">
-          WiseShield protects you from deceptive websites trying to steal your information, acting as your digitallifeguard against online phishing scams.
+          PhishHook protects you from deceptive websites trying to steal your information, acting as your digitallifeguard against online phishing scams.
           </p>
         </div>
       </div>
@@ -28,10 +28,10 @@ function Feature() {
         />
         <div className="w-3/5 flex flex-col items-center justify-center gap-y-10 ">
           <span className="text-3xl text-center font-bold text-[#5646b1]">
-          WiseShield: Your Ultimate Guard <br/>Against Phishing Attacks
+          PhishHook: Your Ultimate Guard <br/>Against Phishing Attacks
           </span>
           <p className="text-center text-xl">
-          WiseShield ensures your online safety with AI-powered <br/>phishing detection and blockchain verification, <br/>keeping your digital world secure.
+          PhishHook ensures your online safety with AI-powered <br/>phishing detection and blockchain verification, <br/>keeping your digital world secure.
           </p>
         </div>
       </div>

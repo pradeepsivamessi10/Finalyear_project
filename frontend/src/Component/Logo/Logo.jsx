@@ -6,7 +6,7 @@ function Logo() {
     <>
       <div class="w-[170px] flex flex-col">
         <span class="font-extrabold text-2xl">
-          WiseShield
+        PhishHook
           <span class="bg-clip-text ml-1 text-transparent bg-gradient-to-r from-[#3196DC] to-[#9068C1]">
             Ai
           </span>

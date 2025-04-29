@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     head_img.classList.remove("rotate");
     body.style.backgroundColor = "#B5CFE8";
     head_img.src = "images/not_enable.png";
-    head_text.innerHTML = "Click to Enable<br />WiseShield Ai";
+    head_text.innerHTML = "Click to Enable<br />PhishHook Ai";
     head_text.style.color = "#000000";
     enable.src = "images/power_off.png";
   };
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     head_img.classList.add("rotate");
     body.style.backgroundColor = "#BCE2A4";
     head_img.src = "images/scanning.png";
-    head_text.innerHTML = "WiseShield Ai is Enabled";
+    head_text.innerHTML = "PhishHook Ai is Enabled";
     head_text.style.color = "#000000";
     enable.src = "images/power_on.png";
   };

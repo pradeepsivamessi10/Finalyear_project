@@ -22,7 +22,7 @@ def generate_cache_key(data):
 @cross_origin(origin='*')
 @app.route("/")
 def hello_world():
-    return "<h1>WiseShield Ai Backend</h1>"
+    return "<h1>Phishhook Ai Backend</h1>"
 
 
 @cross_origin(origin='*')
