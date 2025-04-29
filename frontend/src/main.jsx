@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import Layout from "./Layout.jsx"
+import Dashboard from './Component/Dashboard/Dashboard.jsx'
 
 
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from "react-router-dom"
@@ -15,7 +16,7 @@ const router=createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='/site' element={<Site/>}/>
       <Route path='/team' element={<Team/>}/>
-
+      <Route path="/dashboard" element={<Dashboard />} />
     </Route>
 
   )

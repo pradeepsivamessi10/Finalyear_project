@@ -19,6 +19,12 @@ function Navbar() {
             Home
           </NavLink>
           <NavLink
+            to="/dashboard"
+            className="no-underline text-lg  font-medium  text-[#2b1f6f] link"
+          >
+            Dashboard
+          </NavLink>
+          <NavLink
             to="/site"
             className="no-underline text-lg  font-medium  text-[#2b1f6f] link"
           >
